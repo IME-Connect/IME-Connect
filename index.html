@@ -859,7 +859,7 @@
       <form class="quote-form">
         <div class="form-row">
           <input type="text" placeholder="Full name" class="form-input" required>
-          <input type="text" placeholder="Postcode" class="form-input" required>
+          <input type="text" placeholder="Postal Code" class="form-input" required>
         </div>
         <div class="form-row">
           <input type="email" placeholder="Email address" class="form-input" required>
@@ -868,6 +868,55 @@
         <textarea placeholder="Tell us about your needs or any questions you have" class="form-input form-textarea" required></textarea>
         <button type="submit" class="btn btn--primary btn--full">Send Message</button>
       </form>
+      <div class="footer__newsletter" id="subscribe">
+        <h4 class="footer__newsletter-title">Subscribe for Updates</h4>
+        <p class="footer__newsletter-text">Receive periodic updates on IME availability, specialties, and scheduling information from IME Connect.</p>
+        <div id="mlb2-34733808" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-34733808">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1985647/forms/174013123180627735/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ml-form-embedPermissions">
+                    <div class="ml-form-embedPermissionsContent default privacy-policy">
+                      <p>You can unsubscribe anytime. For more details, review our Privacy Policy.</p>
+                    </div>
+                  </div>
+                  <div class="ml-form-checkboxRow ml-validate-required">
+                    <label class="checkbox">
+                      <input type="checkbox" aria-required="true">
+                      <div class="label-description">
+                        <p>Opt in to receive news and updates.</p>
+                      </div>
+                    </label>
+                  </div>
+                  <input type="hidden" name="ml-submit" value="1">
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary">Subscribe</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading">
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+              <div class="ml-form-successBody row-success" style="display: none">
+                <div class="ml-form-successContent">
+                  <h4>Thank you!</h4>
+                  <p>You will receive IME availability updates shortly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -924,6 +973,18 @@
     </div>
   </footer>
 
+  <script>
+    function ml_webform_success_34733808() {
+      var $ = window.ml_jQuery || window.jQuery;
+      if (!$) { return; }
+      $('.ml-subscribe-form-34733808 .row-success').show();
+      $('.ml-subscribe-form-34733808 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"></script>
+  <script>
+    fetch("https://assets.mailerlite.com/jsonp/1985647/forms/174013123180627735/takel");
+  </script>
   <script src="script.js"></script>
 
   <!-- WhatsApp Widget - TODO: Update phone number -->
